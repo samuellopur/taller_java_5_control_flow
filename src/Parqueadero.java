@@ -5,11 +5,11 @@ public class Parqueadero {
     public static void controlarAcceso() {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar tipo de vehículo
+        // Solicita el tipo de vehículo
         System.out.print("Ingrese el tipo de vehículo (auto, moto, bicicleta): ");
         String tipoVehiculo = scanner.nextLine().toLowerCase();
 
-        // Solicitar hora de llegada
+        // Solicita hora de llegada
         System.out.print("Ingrese la hora de llegada (formato 24 horas): ");
         int horaLlegada = scanner.nextInt();
 
@@ -17,7 +17,7 @@ public class Parqueadero {
         double recargo = 0;
         double costoTotal = 0;
 
-        // Asignar tarifa base según el tipo de vehículo
+        // Se asigna tarifa, según el tipo de vehículo
         switch (tipoVehiculo) {
             case "auto":
                 tarifaBase = 5000;

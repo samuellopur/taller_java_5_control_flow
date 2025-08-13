@@ -9,7 +9,7 @@ public class Veterinaria {
         System.out.print("Ingrese el tipo de animal (perro, gato, ave, otro): ");
         String tipoAnimal = scanner.nextLine().toLowerCase();
 
-        String veterinario = "";
+        String veterinario = ".";
         boolean vacunacionAdicional = false;
         int edad = 0;
 
